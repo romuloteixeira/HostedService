@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -19,6 +15,13 @@ namespace WorkerService1
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();
+                    
+                    services.AddHostedService<TimedHostedService>();
+
+                    services.AddHostedService<Worker2>();
+
+                    services.AddHostedService<ConsumeScopedServiceHostedService>();
+                    services.AddScoped<IScopedProcessingService, ScopedProcessingService>();
                 });
     }
 }

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>dotnet-WorkerService1-9B786A4A-C73C-4CAC-A3DB-3C122CE01215</UserSecretsId>
+    <UserSecretsId>dotnet-WorkerService1-30F1070B-BFF6-4264-B2B4-657E9112FB2F</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
