@@ -6,7 +6,7 @@ namespace HostedService.BackgroundTaskQueues
 {
     public interface IBackgroundTaskQueue
     {
-        void QueueBackgoundWorkItem(Func<CancellationToken, Task> workItem);
+        void QueueBackgroundWorkItem(Func<CancellationToken, Task> workItem);
 
         Task<Func<CancellationToken, Task>> DequeueAsync(CancellationToken cancellationToken);
     }
